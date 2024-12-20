@@ -18,3 +18,6 @@ This project focuses on memory and network traffic analysis using:
 - `yara_rules/`: Rules for detecting malware in memory dumps.
 - `splunk_queries/`: Queries for correlating logs in Splunk.
 - `docs/`: Walkthrough documentation.
+## Walkthrough Document
+
+The full walkthrough is available for download: [Proactive Report](docs/Proactive_Report.docx)
