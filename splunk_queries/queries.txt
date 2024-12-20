@@ -1,0 +1,11 @@
+# Detect Abnormal Outbound Traffic
+index=proactive sourcetype=_json direction=to_server 
+| stats count by src_ip dest_ip dest_port
+| where count > 50
+| sort - count
+
+# Correlate Alerts with System Logs
+(index=proactive sourcetype=_json event_type=alert) OR 
+(index=proactive sourcetype=system_logs event_type="file_change" OR event_type="process_start") 
+| transaction src_ip maxpause=5m
+| table timestamp src_ip dest_ip signature event_type file_path process_name
