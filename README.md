@@ -20,4 +20,4 @@ This project focuses on memory and network traffic analysis using:
 - `docs/`: Walkthrough documentation.
 ## Walkthrough Document
 
-The full walkthrough is available for download: [Proactive Report](/Proactive_Report.docx)
+The full walkthrough is available for download: [Proactive Report](Zues-Trojan-Analysis/Proactive_Report.docx)
