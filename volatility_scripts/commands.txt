@@ -1,0 +1,11 @@
+# Process List
+python2 vol.py -f /home/kali/infected_memory/memdump.mem --profile=Win7SP1x64 pslist
+
+# Network Connections
+python2 vol.py -f /home/kali/infected_memory/memdump.mem --profile=Win7SP1x64 netscan
+
+# Identify Injected Code
+python2 vol.py -f /home/kali/infected_memory/memdump.mem --profile=Win7SP1x64 malfind --dump-dir=/tmp/injected
+
+# Dump Process Memory
+python2 vol.py -f /home/kali/infected_memory/memdump.mem --profile=Win7SP1x64 procdump -p 456 --dump-dir=/tmp/dumps
